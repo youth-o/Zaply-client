@@ -1,8 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
+      fontFamily: {
+        pretendard: ["var(--font-pretendard)", "sans-serif"],
+        creato: ["var(--font-creato)", "sans-serif"],
+      },
+      fontSize: {
+        h1: ["32px", { lineHeight: "130%", fontWeight: "700" }],
+        h2: ["28px", { lineHeight: "130%", fontWeight: "700" }],
+        h3: ["26px", { lineHeight: "130%", fontWeight: "700" }],
+        t1: ["24px", { lineHeight: "130%", fontWeight: "600" }],
+        t2: ["22px", { lineHeight: "130%", fontWeight: "600" }],
+        t3: ["20px", { lineHeight: "130%", fontWeight: "600" }],
+        b1: ["18px", { lineHeight: "150%", fontWeight: "400" }],
+        b2: ["16px", { lineHeight: "150%", fontWeight: "400" }],
+        b3: ["14px", { lineHeight: "150%", fontWeight: "400" }],
+        b4: ["12px", { lineHeight: "150%", fontWeight: "400" }],
+        button: ["18px", { lineHeight: "150%", fontWeight: "500" }],
+        caption: ["14px", { lineHeight: "150%", fontWeight: "400" }],
+      },
       colors: {
         grayscale: {
           900: "#0F1114",
@@ -15,7 +37,7 @@ module.exports = {
           200: "#F6F7F9",
           100: "#FEFEFE",
         },
-        "main-blue": {
+        blue: {
           blueblack: "#0A2838",
           900: "#147796",
           800: "#1B9FC8",
@@ -24,7 +46,7 @@ module.exports = {
           300: "#D8F5FF",
           100: "#E9F9FF",
         },
-        "main-green": {
+        green: {
           900: "#0E694D",
           800: "#11AB7B",
           700: "#1FEAAB",
@@ -37,12 +59,12 @@ module.exports = {
           500: "#FB7D8E",
           300: "#FFDBE0",
         },
-        "pastel-pink": {
+        pink: {
           700: "#FFA5FF",
           500: "#FFDBFF",
           300: "#FFF1FF",
         },
-        "pastel-yellow": {
+        yellow: {
           500: "#FFF280",
           300: "#FFFCE6",
         },
