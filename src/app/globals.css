@@ -6,14 +6,49 @@
   --background: #ffffff;
   --foreground: #171717;
   --font-pretendard: "Pretendard";
-  --font-creato: "Creato Display";
+  --font-creato-800: "CreatoDisplay-ExtraBoldItalic";
+  --font-creato-700: "CreatoDisplay-BoldItalic";
+  --font-creato-500: "CreatoDisplay-MediumItalic";
+  --font-creato-400: "CreatoDisplay-RegularItalic";
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-colorxscheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+@font-face {
+  font-family: "CreatoDisplay-RegularItalic";
+  src: url("/fonts/CreatoDisplay-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CreatoDisplay-MediumItalic";
+  src: url("/fonts/CreatoDisplay-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CreatoDisplay-BoldItalic";
+  src: url("/fonts/CreatoDisplay-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CreatoDisplay-ExtraBoldItalic";
+  src: url("/fonts/CreatoDisplay-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
 }
 
 html,
@@ -25,7 +60,9 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-pretendard), var(--font-creato), Arial, Helvetica, sans-serif;
+  font-family:
+    var(--font-pretendard), var(--font-creato-400), var(--font-creato-500), var(--font-creato-700),
+    var(--font-creato-800), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
