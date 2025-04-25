@@ -9,7 +9,10 @@ module.exports = {
     extend: {
       fontFamily: {
         pretendard: ["var(--font-pretendard)", "sans-serif"],
-        creato: ["var(--font-creato)", "sans-serif"],
+        creato800: ["var(--font-creato-800)", "sans-serif"],
+        creato700: ["var(--font-creato-700)", "sans-serif"],
+        creato500: ["var(--font-creato-500)", "sans-serif"],
+        creato400: ["var(--font-creato-400)", "sans-serif"],
       },
       fontSize: {
         h1: ["32px", { lineHeight: "130%", fontWeight: "700" }],
