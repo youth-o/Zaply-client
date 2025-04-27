@@ -4,7 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-const buttonVariants = cva("h-[50px] flex items-center justify-center gap-2 text-b1M", {
+const buttonVariants = cva("h-[50px] flex items-center justify-center gap-2 !text-button1", {
   variants: {
     variant: {
       active: "bg-blue-blueblack text-grayscale-100",
@@ -13,7 +13,7 @@ const buttonVariants = cva("h-[50px] flex items-center justify-center gap-2 text
     },
     size: {
       default: "w-full py-3 px-2 rounded-full",
-      sm: "w-[120px] py-3 px-4 rounded-[12px]",
+      sm: "w-[120px] py-3 px-4 rounded-[12px] !text-b2R",
     },
   },
   defaultVariants: {
