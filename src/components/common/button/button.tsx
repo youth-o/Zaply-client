@@ -20,6 +20,13 @@ const buttonVariants = cva("h-[50px] flex items-center justify-center gap-2 !tex
     variant: "active",
     size: "default",
   },
+  compoundVariants: [
+    {
+      variant: "active",
+      size: "sm",
+      className: "bg-blue-700 text-grayscale-100",
+    },
+  ],
 });
 
 export interface ButtonProps
