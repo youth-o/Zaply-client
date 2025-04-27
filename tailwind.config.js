@@ -87,6 +87,21 @@ module.exports = {
         "y300-b700": "linear-gradient(135deg, #FFFCE6 0%, #22C7FA 100%)",
         main: "url('/assets/images/background.webp')",
       },
+      keyframes: {
+        "toast-pop-in": {
+          "0%": { transform: "scale(0.9)", opacity: "0" },
+          "50%": { transform: "scale(1.05)", opacity: "1" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        "toast-pop-out": {
+          "0%": { transform: "scale(1)", opacity: "1" },
+          "100%": { transform: "scale(0.9)", opacity: "0" },
+        },
+      },
+      animation: {
+        "toast-pop-in": "toast-pop-in 0.5s ease-out",
+        "toast-pop-out": "toast-pop-out 0.3s ease-in",
+      },
     },
   },
   plugins: [],
