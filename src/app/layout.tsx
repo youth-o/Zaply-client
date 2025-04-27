@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { Viewport } from "next";
+import { ErrorProvider, QueryProvider, ViewportProvider } from "@/providers";
 
 const pretendard = localFont({
   src: "../../public/fonts/PretendardVariable.woff2",
@@ -49,9 +50,7 @@ const creato800 = localFont({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#FFFCE6",
-  maximumScale: 1,
-  userScalable: false,
+  themeColor: "#ffffff",
 };
 
 export const metadata = {
@@ -74,11 +73,11 @@ export default function RootLayout({
   modal: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html suppressHydrationWarning lang="ko">
       <head>
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <link rel="apple-touch-icon" href="/assets/logo/logo512_maskable.png" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link
           rel="apple-touch-startup-image"
           media="screen and (device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
@@ -107,7 +106,7 @@ export default function RootLayout({
         <link
           rel="apple-touch-startup-image"
           media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-          href="/assets/splash/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png"
+          href="/assets/splash/iPhone_16e__iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png"
         />
         <link
           rel="apple-touch-startup-image"
@@ -136,9 +135,15 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${pretendard.variable} ${creato400.variable} ${creato500.variable} ${creato700.variable} ${creato800.variable} font-pretendard`}>
-        {children}
-        {modal}
+        className={`${pretendard.variable} ${creato400.variable} ${creato500.variable} ${creato700.variable} ${creato800.variable} relative max-w-[440px] mx-auto bg-grayscale-300 overflow-x-hidden overscroll-none`}>
+        <ViewportProvider>
+          <ErrorProvider>
+            <QueryProvider>
+              {children}
+              {modal}
+            </QueryProvider>
+          </ErrorProvider>
+        </ViewportProvider>
       </body>
     </html>
   );
