@@ -1,4 +1,5 @@
 import { Container } from "@/components";
+import OnBoardingFooter from "@/components/onboarding/OnBoardingFooter";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
         <div className="flex flex-col gap-2">
           <h1 className="text-h1">Zaply</h1>
           <p className="text-b1R">Create once. Spread with Zaply</p>
+          <OnBoardingFooter />
         </div>
       </div>
     </Container>

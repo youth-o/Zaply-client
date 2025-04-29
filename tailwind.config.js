@@ -85,6 +85,7 @@ module.exports = {
       backgroundImage: {
         "b700-g700": "linear-gradient(135deg, #22C7FA 0%, #1FEAAB 100%)",
         "y300-b700": "linear-gradient(135deg, #FFFCE6 0%, #22C7FA 100%)",
+        "b500-y300": "linear-gradient(180deg, #93E6FF 0%, #FEFEFE 49%, #FFFCE6 100%)",
         main: "url('/assets/images/background.webp')",
       },
       keyframes: {
