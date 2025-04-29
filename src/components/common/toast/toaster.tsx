@@ -1,17 +1,17 @@
 "use client";
 
-import { useToast } from "@/hooks/useToast";
+import { useToast } from "@/utils/useToast";
 import {
   Toast,
   ToastDescription,
   ToastProvider,
   ToastTitle,
   ToastViewport,
-} from "@/components/common/toast/toast";
+} from "@/components/common/toast";
 import { CircleCheckIcon, ErrorIcon } from "@/components/icons";
-import { cn } from "@/lib/utils";
+import cn from "@/utils/cn";
 
-export function Toaster() {
+export const Toaster = () => {
   const { toasts } = useToast();
 
   return (
@@ -45,4 +45,4 @@ export function Toaster() {
       <ToastViewport />
     </ToastProvider>
   );
-}
+};
