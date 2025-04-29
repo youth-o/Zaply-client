@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Viewport } from "next";
 import { ErrorProvider, QueryProvider, ViewportProvider } from "@/providers";
+import { Toaster } from "@/components/common/toast/toaster";
 
 const pretendard = localFont({
   src: "../../public/fonts/PretendardVariable.woff2",
@@ -141,6 +142,7 @@ export default function RootLayout({
             <QueryProvider>
               {children}
               {modal}
+              <Toaster />
             </QueryProvider>
           </ErrorProvider>
         </ViewportProvider>
