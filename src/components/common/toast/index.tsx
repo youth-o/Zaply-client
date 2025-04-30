@@ -93,7 +93,10 @@ const ToastDescription = React.forwardRef<
 >(({ className, icon, children, ...props }, ref) => (
   <ToastPrimitives.Description
     ref={ref}
-    className={cn("flex gap-2 items-center !text-b3M text-grayscale-100", className)}
+    className={cn(
+      "flex gap-2 items-center !text-b3M text-grayscale-100 whitespace-pre-line",
+      className
+    )}
     {...props}>
     {icon}
     {children}

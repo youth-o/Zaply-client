@@ -12,9 +12,11 @@ const SignInFooter = () => {
         <div className="basis-[28%] h-[1px] bg-grayscale-400" />
       </div>
       <div className="flex gap-3 items-center justify-center">
-        <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-blue-700 cursor-pointer">
+        <a
+          href="/sign-up"
+          className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-blue-700 cursor-pointer">
           <EmailIcon stroke="#fefefe" className="w-[24px] h-[24px]" />
-        </div>
+        </a>
         <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-grayscale-100 border border-1-grayscale-300 cursor-pointer">
           <Image src={"/assets/images/google-logo.svg"} alt="google-logo" width={24} height={24} />
         </div>
