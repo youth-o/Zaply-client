@@ -1,5 +1,5 @@
 import { Container } from "@/components";
-import OnBoardingFooter from "@/components/onboarding/OnBoardingFooter";
+import OnBoardingFooter from "@/components/onBoarding/OnBoardingFooter";
 
 export default function Home() {
   return (

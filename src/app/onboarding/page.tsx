@@ -1,7 +1,7 @@
 import { Container } from "@/components";
-import OnBoardingContent from "@/components/onboarding/OnBoardingContent";
-import OnBoardingFooter from "@/components/onboarding/OnBoardingFooter";
-import OnBoardingHeader from "@/components/onboarding/OnBoardingHeader";
+import OnBoardingContent from "@/components/onBoarding/OnBoardingContent";
+import OnBoardingFooter from "@/components/onBoarding/OnBoardingFooter";
+import OnBoardingHeader from "@/components/onBoarding/OnBoardingHeader";
 
 const OnBoarding = () => {
   return (
