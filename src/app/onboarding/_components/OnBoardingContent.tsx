@@ -1,7 +1,9 @@
 "use client";
 
 import { EllipseIcon } from "@/components/icons";
+import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { fadeUpVariants, transition } from "./_animation";
 
 const mockContents = [
   {
@@ -42,20 +44,24 @@ const OnBoardingContent = () => {
     <section className="flex flex-col items-center justify-center gap-10 w-full">
       <div
         ref={scrollRef}
-        className="flex gap-5 overflow-x-auto scrollbar-hide w-full snap-x snap-mandatory"
+        className="flex gap-5 overflow-x-auto overflow-y-hidden scrollbar-hide w-full snap-x snap-mandatory"
         style={{
           WebkitOverflowScrolling: "touch",
           scrollBehavior: "smooth",
         }}>
-        {mockContents.map(item => (
-          <div
+        {mockContents.map((item, index) => (
+          <motion.div
             key={item.id}
-            className="w-full flex-shrink-0 snap-start flex flex-col items-center justify-center gap-12">
+            className="w-full flex-shrink-0 snap-start flex flex-col items-center justify-center gap-12"
+            initial="hidden"
+            animate={currentIndex === index ? "visible" : "hidden"}
+            variants={fadeUpVariants}
+            transition={transition}>
             <p className="text-blue-blueblack text-h2 text-center whitespace-pre-line">
               {item.title}
             </p>
             <div className="w-full h-[115px] flex items-center justify-center">{item.gui}</div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
