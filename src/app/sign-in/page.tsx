@@ -1,16 +1,14 @@
 import { Container } from "@/components";
-import SignInFooter from "@/app/onboarding/_components/SignInFooter";
-import SignInForm from "@/app/onboarding/_components/SignInForm";
-import SignInHeader from "@/app/onboarding/_components/SignInHeader";
+import SignInFooter from "@/app/sign-in/_components/SignInFooter";
+import SignInForm from "@/app/sign-in/_components/SignInForm";
+import SignInHeader from "@/app/sign-in/_components/SignInHeader";
 
 const SignIn = () => {
   return (
-    <Container className="bg-center bg-b500-y300">
-      <div className="flex flex-col gap-[54px]">
-        <SignInHeader />
-        <SignInForm />
-        <SignInFooter />
-      </div>
+    <Container className="relative bg-b500-y300 flex flex-col gap-[54px]">
+      <SignInHeader />
+      <SignInForm />
+      <SignInFooter />
     </Container>
   );
 };

@@ -1,16 +1,17 @@
+import Image from "next/image";
 import { Container } from "@/components";
-import OnBoardingHeader from "../sign-in/_components/OnBoardingHeader";
-import OnBoardingContent from "../sign-in/_components/OnBoardingContent";
-import OnBoardingFooter from "../sign-in/_components/OnBoardingFooter";
+import { TopBar } from "@/components/common/topBar";
+import OnBoardingContent from "./_components/OnBoardingContent";
+import OnBoardingFooter from "./_components/OnBoardingFooter";
 
 const OnBoarding = () => {
   return (
-    <Container className="bg-center bg-b500-y300">
-      <div className="flex flex-col items-center justify-center gap-[114px]">
-        <OnBoardingHeader />
-        <OnBoardingContent />
-        <OnBoardingFooter />
-      </div>
+    <Container className="overflow-y-scroll bg-b500-y300 flex flex-col gap-[114px]">
+      <TopBar
+        left={<Image src={"/assets/images/logo-black.svg"} width={99} height={36} alt="logo" />}
+      />
+      <OnBoardingContent />
+      <OnBoardingFooter />
     </Container>
   );
 };
