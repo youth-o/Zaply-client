@@ -1,6 +1,6 @@
 "use client";
 
-import PolicyList from "./policy-list";
+import PolicyList from "./PolicyList";
 import { usePolicyStore } from "./store/policy-store";
 import { Button } from "@/components/common/button";
 import { useRouter } from "next/navigation";

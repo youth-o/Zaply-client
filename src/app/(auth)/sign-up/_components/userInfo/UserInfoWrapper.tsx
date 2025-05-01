@@ -4,7 +4,7 @@ import { Button } from "@/components/common/button";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { useToast } from "@/utils/useToast";
-import UserInfoForm from "./user-info-form";
+import UserInfoForm from "./UserInfoForm";
 import { userInfoType, userInfoSchema } from "@/lib/zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 

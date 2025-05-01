@@ -1,5 +1,5 @@
 import { Container } from "@/components";
-import PolicyContainer from "./_components/policy-container";
+import PolicyContainer from "./_components/PolicyContainer";
 
 export default function PolicyPage() {
   return (

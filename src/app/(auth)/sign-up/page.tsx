@@ -1,7 +1,7 @@
 import { Container } from "@/components";
-import EmailCheckWrapper from "./_components/email/email-check-wrapper";
-import PasswordCheckWrapper from "./_components/password/password-check-wrapper";
-import UserInfoWrapper from "./_components/userInfo/user-info-wrapper";
+import EmailCheckWrapper from "./_components/email/EmailCheckWrapper";
+import PasswordCheckWrapper from "./_components/password/PasswordCheckWrapper";
+import UserInfoWrapper from "./_components/userInfo/UserInfoWrapper";
 
 export default function SignInPage({ searchParams }: { searchParams: { state: string } }) {
   const state = searchParams.state;
