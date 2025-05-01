@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      minHeight: {
+        "real-screen": "calc(var(--vh) * 100)",
+      },
       fontFamily: {
         pretendard: ["var(--font-pretendard)", "sans-serif"],
         creato800: ["var(--font-creato-800)", "sans-serif"],
@@ -87,6 +90,8 @@ module.exports = {
         "y300-b700": "linear-gradient(135deg, #FFFCE6 0%, #22C7FA 100%)",
         "b500-y300": "linear-gradient(180deg, #93E6FF 0%, #FEFEFE 49%, #FFFCE6 100%)",
         main: "url('/assets/images/background.webp')",
+        "background-default": "url('/assets/images/background2.webp')",
+        "background-line": "url('/assets/images/backgroundLine.webp')",
       },
       keyframes: {
         "toast-pop-in": {

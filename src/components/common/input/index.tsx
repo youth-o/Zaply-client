@@ -1,6 +1,6 @@
 import * as React from "react";
 import cn from "@/utils/cn";
-import { CheckIcon } from "@/components/icons";
+import { CheckIcon } from "@/components/icons/service";
 
 type CheckItem = {
   label: string;
@@ -50,17 +50,17 @@ const Input = React.forwardRef<
             {...props}
           />
           {type === "timer" && (
-            <div className="absolute right-5 top-1/2 -translate-y-1/2 text-b3M text-redscale-700">
-              {timerText ?? "03:00"}
+            <div className="absolute -translate-y-1/2 right-5 top-1/2 text-b3M text-redscale-700">
+              {timerText}
             </div>
           )}
         </div>
 
-        {type === "check" && checkItems.length > 0 && (
-          <div className="flex flex-wrap gap-4 items-center mt-2 pl-3">
+        {(type === "check" || type === "password") && checkItems.length > 0 && (
+          <div className="flex flex-wrap items-center gap-4 pl-3 mt-2">
             {checkItems.map((item, index) => (
-              <div key={index} className="flex gap-1 items-center">
-                <CheckIcon stroke={item.isChecked ? "#22C7FA" : "#BDC5D0"} />
+              <div key={index} className="flex items-center gap-1">
+                <CheckIcon className={item.isChecked ? "text-blue-700" : "text-grayscale-500"} />
                 <p
                   className={cn(
                     "!text-b4R",

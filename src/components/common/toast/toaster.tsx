@@ -8,7 +8,7 @@ import {
   ToastTitle,
   ToastViewport,
 } from "@/components/common/toast";
-import { CircleCheckIcon, ErrorIcon } from "@/components/icons";
+import { CircleCheckIcon, ErrorIcon } from "@/components/icons/service";
 import cn from "@/utils/cn";
 
 export const Toaster = () => {
@@ -26,13 +26,17 @@ export const Toaster = () => {
 
         return (
           <Toast key={id} {...props}>
-            <div className="flex w-full items-center gap-2">
+            <div
+              className={`flex items-center w-full gap-2 ${variant === "default" ? "justify-center" : ""}`}>
               <div className="flex gap-2">
                 {title && <ToastTitle>{title}</ToastTitle>}
                 {description && (
                   <ToastDescription
                     icon={icon}
-                    className={cn(variant === "default" ? "ml-[95px]" : "")}>
+                    className={cn(
+                      "whitespace-pre-line",
+                      variant === "default" ? "text-center" : "text-left"
+                    )}>
                     {description}
                   </ToastDescription>
                 )}
