@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import { Viewport } from "next";
+import { Metadata, Viewport } from "next";
 import { ErrorProvider, QueryProvider, ViewportProvider } from "@/providers";
 import { Toaster } from "@/components/common/toast/toaster";
 
@@ -51,10 +51,11 @@ const creato800 = localFont({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  maximumScale: 1,
   themeColor: "#ffffff",
 };
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL("https://zaply-landing.vercel.app/"),
   title: "Zaply | Create Once, Spread with Zaply",
   description:
@@ -79,6 +80,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
         <link
           rel="apple-touch-startup-image"
           media="screen and (device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"

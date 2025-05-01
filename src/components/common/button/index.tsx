@@ -3,7 +3,7 @@ import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import cn from "@/utils/cn";
 
-const buttonVariants = cva("h-[50px] flex items-center justify-center gap-2 !text-button1", {
+const buttonVariants = cva("h-[50px] flex items-center justify-center gap-2 text-button1", {
   variants: {
     variant: {
       active: "bg-blue-blueblack text-grayscale-100",
@@ -12,7 +12,7 @@ const buttonVariants = cva("h-[50px] flex items-center justify-center gap-2 !tex
     },
     size: {
       default: "w-full py-3 px-2 rounded-full",
-      sm: "w-[120px] py-3 px-4 rounded-[12px] !text-b2R",
+      sm: "w-[120px] py-3 px-4 rounded-[12px] text-b2R",
     },
   },
   defaultVariants: {
