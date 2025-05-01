@@ -5,7 +5,7 @@ import SignInHeader from "@/app/sign-in/_components/SignInHeader";
 
 const SignIn = () => {
   return (
-    <Container className="relative bg-b500-y300 flex flex-col gap-[54px]">
+    <Container className="relative bg-center bg-cover bg-background-default flex flex-col gap-[54px]">
       <SignInHeader />
       <SignInForm />
       <SignInFooter />

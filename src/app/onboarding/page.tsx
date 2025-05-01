@@ -6,9 +6,9 @@ import OnBoardingFooter from "./_components/OnBoardingFooter";
 
 const OnBoarding = () => {
   return (
-    <Container className="overflow-y-scroll bg-b500-y300 flex flex-col gap-[114px]">
+    <Container className="overflow-y-scroll bg-center bg-cover bg-background-default flex flex-col gap-[114px]">
       <TopBar
-        left={<Image src={"/assets/images/logo-black.svg"} width={99} height={36} alt="logo" />}
+        left={<Image src={"/assets/images/logo-black.webp"} width={99} height={36} alt="logo" />}
       />
       <OnBoardingContent />
       <OnBoardingFooter />
