@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { EmailIcon } from "../icons";
+import { EmailIcon } from "../../../components/icons";
 
 const SignInFooter = () => {
   return (
@@ -13,7 +13,7 @@ const SignInFooter = () => {
       </div>
       <div className="flex gap-3 items-center justify-center">
         <a
-          href="/sign-up"
+          href="/policy"
           className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-blue-700 cursor-pointer">
           <EmailIcon stroke="#fefefe" className="w-[24px] h-[24px]" />
         </a>

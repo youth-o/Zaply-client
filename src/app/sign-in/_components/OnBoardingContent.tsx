@@ -1,7 +1,7 @@
 "use client";
 
+import { EllipseIcon } from "@/components/icons";
 import { useEffect, useRef, useState } from "react";
-import { EllipseIcon } from "../icons";
 
 const mockContents = [
   {

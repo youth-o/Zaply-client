@@ -1,5 +1,5 @@
+import { TopBar } from "@/components/common/topBar";
 import Image from "next/image";
-import { TopBar } from "../common/topBar";
 
 const OnBoardingHeader = () => {
   return (

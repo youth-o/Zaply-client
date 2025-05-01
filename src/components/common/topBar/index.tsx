@@ -20,7 +20,7 @@ export const TopBar: React.FC<TopBarProps> = ({
   isBlur = false,
 }) => {
   return (
-    <motion.div
+    <motion.header
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
@@ -41,6 +41,6 @@ export const TopBar: React.FC<TopBarProps> = ({
       <div className="w-[80px] flex justify-start">{left}</div>
       <div className="flex-1 flex justify-center">{center}</div>
       <div className="w-[80px] flex justify-end">{right}</div>
-    </motion.div>
+    </motion.header>
   );
 };

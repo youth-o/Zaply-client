@@ -1,7 +1,7 @@
 "use client";
 
+import { Button } from "@/components/common/button";
 import { useRouter } from "next/navigation";
-import { Button } from "../common/button";
 
 const OnBoardingFooter = () => {
   const router = useRouter();
