@@ -8,10 +8,9 @@ export const ChevronIcon = ({
   width = 24,
   height = 24,
   type = "right",
-  stroke = "#0F1114",
   className,
   ...props
-}: { type: "right" | "left" | "up" | "down"; stroke?: string } & IconProps) => {
+}: { type: "right" | "left" | "up" | "down" } & IconProps) => {
   const paths = {
     right: "M5.5 13L10.5 8L5.5 3",
     left: "M10.5 13L5.5 8L10.5 3",
@@ -28,7 +27,7 @@ export const ChevronIcon = ({
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       {...props}>
-      <path d={paths[type]} stroke={stroke} strokeWidth="1.4" strokeLinecap="round" />
+      <path d={paths[type]} stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
     </svg>
   );
 };
@@ -37,10 +36,9 @@ export const ArrowIcon = ({
   width = 24,
   height = 24,
   type = "down",
-  stroke = "#0F1114",
   className,
   ...props
-}: { type: "right" | "left" | "up" | "down"; stroke?: string } & IconProps) => {
+}: { type: "right" | "left" | "up" | "down" } & IconProps) => {
   const paths = {
     right: ["M3 12H21", "M15 6L21 12L15 18"],
     left: ["M21 12H3", "M9 18L3 12L9 6"],
@@ -58,7 +56,7 @@ export const ArrowIcon = ({
       className={className}
       {...props}>
       {paths[type].map((d, index) => (
-        <path key={index} d={d} stroke={stroke} strokeWidth="1.4" strokeLinecap="round" />
+        <path key={index} d={d} stroke={"currentColor"} strokeWidth="1.4" strokeLinecap="round" />
       ))}
     </svg>
   );
@@ -1285,13 +1283,7 @@ export const CircleCheckIcon = ({
   </svg>
 );
 
-export const CheckIcon = ({
-  width = 24,
-  height = 24,
-  stroke = "#0F1114",
-  className,
-  ...props
-}: IconProps) => (
+export const CheckIcon = ({ width = 24, height = 24, className, ...props }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}
@@ -1300,17 +1292,11 @@ export const CheckIcon = ({
     fill="none"
     className={className}
     {...props}>
-    <path d="M4 13L9 18L20 7" stroke={stroke} strokeWidth="1.4" strokeLinecap="round" />
+    <path d="M4 13L9 18L20 7" stroke={"currentColor"} strokeWidth="1.4" strokeLinecap="round" />
   </svg>
 );
 
-export const CircleIcon = ({
-  width = 24,
-  height = 24,
-  stroke = "#0F1114",
-  className,
-  ...props
-}: IconProps) => (
+export const CircleIcon = ({ width = 24, height = 24, className, ...props }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}
@@ -1323,7 +1309,7 @@ export const CircleIcon = ({
       fillRule="evenodd"
       clipRule="evenodd"
       d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-      stroke={stroke}
+      stroke="currentColor"
       strokeWidth="1.4"
     />
   </svg>
@@ -1419,7 +1405,6 @@ export const CancelIcon = () => {
 export const CircleCheckBoldIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
   color = "#FEFEFE",
   className,
   ...props
@@ -1435,8 +1420,8 @@ export const CircleCheckBoldIcon = ({
     <path
       fillRule="evenodd"
       d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-      fill={stroke}
-      stroke={stroke}
+      fill="currentColor"
+      stroke="currentColor"
       strokeWidth="1.4"
     />
     <path d="M7 13L10 16L17 9" stroke={color} strokeWidth="1.4" strokeLinecap="round" />
