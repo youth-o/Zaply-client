@@ -67,7 +67,10 @@ const OnBoardingContent = () => {
 
       <div className="flex gap-2 mt-[92px]">
         {mockContents.map((_, i) => (
-          <EllipseIcon key={i} fill={i === currentIndex ? "#22C7FA" : "#D6DBE2"} />
+          <EllipseIcon
+            key={i}
+            className={i === currentIndex ? "text-blue-700" : "text-grayscale-400"}
+          />
         ))}
       </div>
     </section>
