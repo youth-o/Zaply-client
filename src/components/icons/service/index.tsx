@@ -695,6 +695,37 @@ export const LinkIcon = ({
   </svg>
 );
 
+export const ExportIcon = ({
+  width = 24,
+  height = 24,
+  stroke = "currentColor",
+  className,
+  ...props
+}: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={width}
+    height={height}
+    viewBox="0 0 24 24"
+    fill="none"
+    className={className}
+    {...props}>
+    <path d="M12 3.231v12.778" stroke={stroke} strokeWidth={1.4} strokeLinecap="square" />
+    <path
+      d="M8.725 5.771 12 2.481l3.276 3.29"
+      stroke={stroke}
+      strokeWidth={1.4}
+      strokeLinecap="square"
+    />
+    <path
+      d="M16.625 10.995h4.625v10.524H2.75V10.995h4.625"
+      stroke={stroke}
+      strokeWidth={1.4}
+      strokeLinecap="square"
+    />
+  </svg>
+);
+
 export const ShareIcon = ({
   width = 24,
   height = 24,

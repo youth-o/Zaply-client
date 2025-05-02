@@ -1,4 +1,5 @@
 import { Container } from "@/components";
+import BNB from "@/components/common/bnb";
 import Link from "next/link";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
           <p className="text-b1R">Create once. Spread with Zaply</p>
           <Link href="/policy">회원가입</Link>
           <Link href="/onboarding">온보딩</Link>
+          <BNB />
         </div>
       </div>
     </Container>
