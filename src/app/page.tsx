@@ -9,6 +9,7 @@ export default function Home() {
           <h1 className="text-h1">Zaply</h1>
           <p className="text-b1R">Create once. Spread with Zaply</p>
           <Link href="/policy">회원가입</Link>
+          <Link href="/onboarding">온보딩</Link>
         </div>
       </div>
     </Container>
