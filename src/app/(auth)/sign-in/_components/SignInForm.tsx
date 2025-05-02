@@ -7,6 +7,7 @@ import { useToast } from "@/utils/useToast";
 import { Button } from "@/components/common/button";
 import { Input } from "@/components/common/input";
 import { UseFormSetError } from "react-hook-form";
+import Link from "next/link";
 
 const schema = z.object({
   email: z.string().email("아이디는 이메일 주소 형태로 입력해주세요."),
@@ -92,9 +93,13 @@ const SignInForm = () => {
       </form>
 
       <div className="flex gap-1 items-center justify-center">
-        <a className="px-[10px] py-1 text-b4M text-blue-blueblack cursor-pointer">이메일 찾기</a>
+        <Link href="/" className="px-[10px] py-1 text-b4M text-blue-blueblack cursor-pointer">
+          이메일 찾기
+        </Link>
         <div className="w-[1px] h-[14px] bg-grayscale-400" />
-        <a className="px-[10px] py-1 text-b4M text-blue-blueblack cursor-pointer">비밀번호 찾기</a>
+        <Link href="/" className="px-[10px] py-1 text-b4M text-blue-blueblack cursor-pointer">
+          비밀번호 찾기
+        </Link>
       </div>
     </section>
   );
