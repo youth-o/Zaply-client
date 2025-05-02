@@ -108,6 +108,9 @@ module.exports = {
         "toast-pop-in": "toast-pop-in 0.5s ease-out",
         "toast-pop-out": "toast-pop-out 0.3s ease-in",
       },
+      boxShadow: {
+        bnb: "0px 0px 50px 0px rgba(152, 167, 172, 0.10)",
+      },
     },
   },
   plugins: [],
