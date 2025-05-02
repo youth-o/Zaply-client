@@ -1,7 +1,7 @@
 import { Container } from "@/components";
-import SignInFooter from "@/app/sign-in/_components/SignInFooter";
-import SignInForm from "@/app/sign-in/_components/SignInForm";
-import SignInHeader from "@/app/sign-in/_components/SignInHeader";
+import SignInFooter from "@/app/(auth)/sign-in/_components/SignInFooter";
+import SignInForm from "@/app/(auth)/sign-in/_components/SignInForm";
+import SignInHeader from "@/app/(auth)/sign-in/_components/SignInHeader";
 
 const SignIn = () => {
   return (

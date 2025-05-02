@@ -1,8 +1,8 @@
 "use client";
 
+import { TopBar } from "@/components/common/topBar";
+import { ArrowIcon } from "@/components/icons";
 import { useRouter } from "next/navigation";
-import { TopBar } from "../../../components/common/topBar";
-import { ArrowIcon } from "../../../components/icons";
 
 const SignInHeader = () => {
   const router = useRouter();

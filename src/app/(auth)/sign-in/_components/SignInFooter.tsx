@@ -1,5 +1,5 @@
+import { EmailIcon } from "@/components/icons";
 import Image from "next/image";
-import { EmailIcon } from "../../../components/icons";
 
 const SignInFooter = () => {
   return (
