@@ -3,25 +3,8 @@
 import { EllipseIcon } from "@/components/icons";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { fadeUpVariants, transition } from "./_animation";
-
-const mockContents = [
-  {
-    id: 0,
-    title: "하나의 콘텐츠로\n모든 플랫폼을 연결하세요",
-    gui: "나중에 기능 GUI 1",
-  },
-  {
-    id: 1,
-    title: "두 번째 온보딩 메시지",
-    gui: "나중에 기능 GUI 2",
-  },
-  {
-    id: 2,
-    title: "세 번째 온보딩 메시지",
-    gui: "나중에 기능 GUI 3",
-  },
-];
+import { fadeUpVariants, transition } from "./animation";
+import { ONBOARDING_CONTENTS } from "@/app/(auth)/sign-in/_components/constants/onboardingContents";
 
 const OnBoardingContent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,7 +24,7 @@ const OnBoardingContent = () => {
   }, []);
 
   return (
-    <section className="flex flex-col items-center justify-center gap-10 w-full">
+    <section className="mt-[180px] flex flex-col items-center justify-center gap-10 w-full">
       <div
         ref={scrollRef}
         className="flex gap-5 overflow-x-auto overflow-y-hidden scrollbar-hide w-full snap-x snap-mandatory"
@@ -49,7 +32,7 @@ const OnBoardingContent = () => {
           WebkitOverflowScrolling: "touch",
           scrollBehavior: "smooth",
         }}>
-        {mockContents.map((item, index) => (
+        {ONBOARDING_CONTENTS.map((item, index) => (
           <motion.div
             key={item.id}
             className="w-full flex-shrink-0 snap-start flex flex-col items-center justify-center gap-12"
@@ -66,7 +49,7 @@ const OnBoardingContent = () => {
       </div>
 
       <div className="flex gap-2 mt-[92px]">
-        {mockContents.map((_, i) => (
+        {ONBOARDING_CONTENTS.map((_, i) => (
           <EllipseIcon
             key={i}
             className={i === currentIndex ? "text-blue-700" : "text-grayscale-400"}

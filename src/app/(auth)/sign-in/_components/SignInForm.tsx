@@ -2,15 +2,15 @@
 
 import { useForm, FieldValues } from "react-hook-form";
 import { z } from "zod";
+import { UseFormSetError } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import Link from "next/link";
 import { useToast } from "@/utils/useToast";
 import { Button } from "@/components/common/button";
 import { Input } from "@/components/common/input";
-import { UseFormSetError } from "react-hook-form";
-import Link from "next/link";
+import { emailCheckSchema } from "@/lib/zod";
 
-const schema = z.object({
-  email: z.string().email("아이디는 이메일 주소 형태로 입력해주세요."),
+const schema = emailCheckSchema.extend({
   password: z.string().min(1, "비밀번호를 입력해 주세요."),
 });
 
