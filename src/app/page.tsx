@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <Container className="bg-center bg-cover bg-main">
+    <Container className="bg-b300-g100">
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-2">
           <h1 className="text-h1">Zaply</h1>

@@ -89,9 +89,11 @@ module.exports = {
         "b700-g700": "linear-gradient(135deg, #22C7FA 0%, #1FEAAB 100%)",
         "y300-b700": "linear-gradient(135deg, #FFFCE6 0%, #22C7FA 100%)",
         "b500-y300": "linear-gradient(180deg, #93E6FF 0%, #FEFEFE 49%, #FFFCE6 100%)",
-        main: "url('/assets/images/background.webp')",
-        "background-default": "url('/assets/images/background2.webp')",
-        "background-line": "url('/assets/images/backgroundLine.webp')",
+        "b300-g100": "linear-gradient(180deg, #D8F5FF 0%, #FEFEFE 100%)",
+        "background-default": "url('/assets/images/background_default.webp')",
+        "backgroundLine-yellow": "url('/assets/images/background_yellow.webp')",
+        "backgroundLine-green": "url('/assets/images/background_green.webp')",
+        "backgroundLine-pink": "url('/assets/images/background_pink.webp')",
       },
       keyframes: {
         "toast-pop-in": {

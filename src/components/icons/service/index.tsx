@@ -56,7 +56,7 @@ export const ArrowIcon = ({
       className={className}
       {...props}>
       {paths[type].map((d, index) => (
-        <path key={index} d={d} stroke={"currentColor"} strokeWidth="1.4" strokeLinecap="round" />
+        <path key={index} d={d} stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
       ))}
     </svg>
   );
@@ -65,7 +65,7 @@ export const ArrowIcon = ({
 export const RefreshIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -90,7 +90,7 @@ export const RefreshIcon = ({
 export const DownLoadIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -111,7 +111,7 @@ export const DownLoadIcon = ({
 export const UpLoadIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -132,7 +132,7 @@ export const UpLoadIcon = ({
 export const SwapIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -154,7 +154,7 @@ export const SwapIcon = ({
 export const HamburgerIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -175,7 +175,7 @@ export const HamburgerIcon = ({
 export const ListIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -215,7 +215,7 @@ export const EllipsisIcon = ({
   width = 24,
   height = 24,
   type = "horizontal",
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps & { type: "horizontal" | "vertical" }) => {
@@ -264,7 +264,7 @@ export const EllipseIcon = ({ width = 8, height = 8, className, ...props }: Icon
 export const EditIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -286,7 +286,7 @@ export const EditIcon = ({
 export const ChartIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -311,7 +311,7 @@ export const ChartIcon = ({
 export const ChatDotIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -354,17 +354,24 @@ export const ChatDotIcon = ({
 export const UserIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={width}
+    height={height}
+    viewBox="0 0 24 24"
+    fill="none"
+    className={className}
+    {...props}>
     <path
       d="M17.2166 19.3323C15.9349 17.9008 14.0727 17 12 17C9.92734 17 8.06492 17.9008 6.7832 19.3323M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21ZM12 14C10.3431 14 9 12.6569 9 11C9 9.34315 10.3431 8 12 8C13.6569 8 15 9.34315 15 11C15 12.6569 13.6569 14 12 14Z"
-      stroke="#0F1114"
-      stroke-width="1.4"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      stroke={stroke}
+      strokeWidth="1.4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -372,7 +379,7 @@ export const UserIcon = ({
 export const ActivityIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -396,7 +403,7 @@ export const ActivityIcon = ({
 export const EmailIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -425,7 +432,7 @@ export const EmailIcon = ({
 export const PasswordIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -452,7 +459,7 @@ export const PasswordIcon = ({
 export const HeartIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -475,7 +482,7 @@ export const HeartIcon = ({
 export const SettingsIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -504,7 +511,7 @@ export const SettingsIcon = ({
 export const BellIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -535,7 +542,7 @@ export const BellIcon = ({
 export const TrashIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -561,7 +568,7 @@ export const TrashIcon = ({
 export const DeleteIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -597,7 +604,7 @@ export const DeleteIcon = ({
 export const StickerIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -629,7 +636,7 @@ export const StickerIcon = ({
 export const ImageIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -667,7 +674,7 @@ export const ImageIcon = ({
 export const LinkIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -681,7 +688,7 @@ export const LinkIcon = ({
     {...props}>
     <path
       d="M9 7C9 7 7 7 7 7C4.23858 7 2 9.23858 2 12C2 14.7614 4.23858 17 7 17C7 17 9 17 9 17"
-      stroke="#0F1114"
+      stroke={stroke}
       strokeWidth="1.4"
       strokeLinecap="round"
     />
@@ -698,7 +705,7 @@ export const LinkIcon = ({
 export const ShareIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -719,7 +726,7 @@ export const ShareIcon = ({
 export const LikeIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -744,7 +751,7 @@ export const LikeIcon = ({
 export const HateIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -770,7 +777,7 @@ export const HateIcon = ({
 export const StarIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -796,7 +803,7 @@ export const StarIcon = ({
 export const FlagIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -827,7 +834,7 @@ export const FlagIcon = ({
 export const SearchIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -853,7 +860,7 @@ export const SearchIcon = ({
 export const CameraIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -887,7 +894,7 @@ export const CameraIcon = ({
 export const LightHubIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -914,7 +921,7 @@ export const LightHubIcon = ({
 export const TVIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -946,7 +953,7 @@ export const TVIcon = ({
 export const FilmIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -978,7 +985,7 @@ export const FilmIcon = ({
 export const VideoIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1011,7 +1018,7 @@ export const VideoIcon = ({
 export const SaveIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1055,7 +1062,7 @@ export const SaveIcon = ({
 export const TagIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1087,7 +1094,7 @@ export const TagIcon = ({
 export const BookMarkIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1113,7 +1120,7 @@ export const BookMarkIcon = ({
 export const FileIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1139,7 +1146,7 @@ export const FileIcon = ({
 export const DangerIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1172,7 +1179,7 @@ export const DangerIcon = ({
 export const ErrorIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1204,7 +1211,7 @@ export const ErrorIcon = ({
 export const HelpIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1241,7 +1248,7 @@ export const HelpIcon = ({
 export const InfoIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1273,7 +1280,7 @@ export const InfoIcon = ({
 export const CircleCheckIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1296,7 +1303,13 @@ export const CircleCheckIcon = ({
   </svg>
 );
 
-export const CheckIcon = ({ width = 24, height = 24, className, ...props }: IconProps) => (
+export const CheckIcon = ({
+  width = 24,
+  height = 24,
+  stroke = "currentColor",
+  className,
+  ...props
+}: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}
@@ -1305,11 +1318,17 @@ export const CheckIcon = ({ width = 24, height = 24, className, ...props }: Icon
     fill="none"
     className={className}
     {...props}>
-    <path d="M4 13L9 18L20 7" stroke={"currentColor"} strokeWidth="1.4" strokeLinecap="round" />
+    <path d="M4 13L9 18L20 7" stroke={stroke} strokeWidth="1.4" strokeLinecap="round" />
   </svg>
 );
 
-export const CircleIcon = ({ width = 24, height = 24, className, ...props }: IconProps) => (
+export const CircleIcon = ({
+  width = 24,
+  height = 24,
+  stroke = "currentColor",
+  className,
+  ...props
+}: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}
@@ -1322,7 +1341,7 @@ export const CircleIcon = ({ width = 24, height = 24, className, ...props }: Ico
       fillRule="evenodd"
       clipRule="evenodd"
       d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-      stroke="currentColor"
+      stroke={stroke}
       strokeWidth="1.4"
     />
   </svg>
@@ -1331,7 +1350,7 @@ export const CircleIcon = ({ width = 24, height = 24, className, ...props }: Ico
 export const XIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1361,7 +1380,7 @@ export const XIcon = ({
 export const RemoveIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1387,7 +1406,7 @@ export const RemoveIcon = ({
 export const AddIcon = ({
   width = 24,
   height = 24,
-  stroke = "#0F1114",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1419,6 +1438,7 @@ export const CircleCheckBoldIcon = ({
   width = 24,
   height = 24,
   color = "#FEFEFE",
+  stroke = "currentColor",
   className,
   ...props
 }: IconProps) => (
@@ -1433,8 +1453,8 @@ export const CircleCheckBoldIcon = ({
     <path
       fillRule="evenodd"
       d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-      fill="currentColor"
-      stroke="currentColor"
+      fill={stroke}
+      stroke={stroke}
       strokeWidth="1.4"
     />
     <path d="M7 13L10 16L17 9" stroke={color} strokeWidth="1.4" strokeLinecap="round" />
