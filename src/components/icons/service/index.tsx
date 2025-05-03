@@ -1565,3 +1565,24 @@ export const CircleCheckBoldIcon = ({
     <path d="M7 13L10 16L17 9" stroke={color} strokeWidth="1.4" strokeLinecap="round" />
   </svg>
 );
+
+export const PlusIcon = ({
+  width = 24,
+  height = 24,
+  color = "#FEFEFE",
+  stroke = "currentColor",
+  className,
+  ...props
+}: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="22"
+    height="22"
+    viewBox="0 0 22 22"
+    fill="none"
+    className={className}
+    {...props}>
+    <path d="M21 11H1" stroke={stroke} stroke-width="1.4" stroke-linecap="round" />
+    <path d="M11 21V1" stroke={stroke} stroke-width="1.4" stroke-linecap="round" />
+  </svg>
+);

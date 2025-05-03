@@ -1,5 +1,9 @@
-interface ChipsProps {
+type ChipsProps = {
   type?: "default" | "like" | "follow";
-  month?: number;
-  count?: number;
-}
+  month: number;
+  counts: {
+    default: number;
+    like: number;
+    follow: number;
+  };
+};

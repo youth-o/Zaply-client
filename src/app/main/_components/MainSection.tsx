@@ -1,0 +1,52 @@
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import Chips from "./Chips";
+import ContentButton from "./ContentButton";
+
+const chipTypes = ["default", "like", "follow"] as const;
+
+const MainSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prev => (prev + 1) % chipTypes.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentType = chipTypes[currentIndex];
+
+  return (
+    <section className="mt-[90px] flex flex-col items-center justify-center gap-5">
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentType}
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -6 }}
+          transition={{ duration: 0.4 }}>
+          <Chips
+            type={currentType}
+            month={5}
+            counts={{
+              default: 1234,
+              like: 567,
+              follow: 89,
+            }}
+          />
+        </motion.div>
+      </AnimatePresence>
+
+      <p className="text-t3 text-grayscale-900 text-center">
+        민영님의 콘텐츠를
+        <br />
+        재플리와 함께 성장시켜 보세요!
+      </p>
+      <ContentButton />
+    </section>
+  );
+};
+
+export default MainSection;

@@ -5,6 +5,8 @@ import Image from "next/image";
 import { Container } from "@/components";
 import { TopBar } from "@/components/common/topBar";
 import { useScrollBlur } from "@/utils/useScrollBlur";
+import MainSection from "./main/_components/MainSection";
+import BNB from "@/components/common/bnb";
 
 export default function Home() {
   const containerRef = useRef<HTMLElement>(null);
@@ -12,13 +14,19 @@ export default function Home() {
   useScrollBlur(containerRef, setIsBlur);
 
   return (
-    <Container
-      ref={containerRef}
-      className="overflow-y-scroll bg-backgroundLine-yellow bg-cover bg-center flex flex-col gap-[28px]">
-      <TopBar
-        isBlur={isBlur}
-        left={<Image src={"/assets/images/logo-black.webp"} width={99} height={36} alt="logo" />}
-      />
-    </Container>
+    <>
+      <Container
+        ref={containerRef}
+        className="overflow-y-scroll bg-backgroundLine-yellow bg-cover bg-center flex flex-col gap-[28px]">
+        <TopBar
+          isBlur={isBlur}
+          left={<Image src={"/assets/images/logo-black.webp"} width={99} height={36} alt="logo" />}
+        />
+        <div className="flex flex-col gap-[72px]">
+          <MainSection />
+        </div>
+      </Container>
+      <BNB />
+    </>
   );
 }
