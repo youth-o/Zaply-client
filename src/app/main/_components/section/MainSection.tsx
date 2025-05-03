@@ -7,6 +7,7 @@ const chipTypes = ["default", "like", "follow"] as const;
 
 const MainSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [username, setUsername] = useState("민영");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -40,7 +41,7 @@ const MainSection = () => {
       </AnimatePresence>
 
       <p className="text-t3 text-grayscale-900 text-center">
-        민영님의 콘텐츠를
+        {username}님의 콘텐츠를
         <br />
         재플리와 함께 성장시켜 보세요!
       </p>
