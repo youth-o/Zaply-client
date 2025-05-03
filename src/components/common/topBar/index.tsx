@@ -3,6 +3,7 @@
 import React from "react";
 import cn from "@/utils/cn";
 import { motion } from "framer-motion";
+import { topBarAnimation } from "@/components/animation";
 
 interface TopBarProps {
   left?: React.ReactNode;
@@ -21,9 +22,9 @@ export const TopBar: React.FC<TopBarProps> = ({
 }) => {
   return (
     <motion.header
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
+      initial="normal"
+      animate={isBlur ? "blur" : "normal"}
+      variants={topBarAnimation}
       className={cn(
         "w-full max-w-[440px] fixed top-0 left-0 right-0 z-50 mx-auto flex items-end justify-between h-[66px] py-3 px-5",
         isBlur && "backdrop-blur-[15px] bg-white/30 border-b border-grayscale-100",

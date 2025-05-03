@@ -160,6 +160,9 @@ module.exports = {
         in: "in 0.2s ease-out",
         out: "out 0.2s ease-in",
       },
+      boxShadow: {
+        bnb: "0px 0px 50px 0px rgba(152, 167, 172, 0.10)",
+      },
     },
   },
   plugins: [],
