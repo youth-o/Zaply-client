@@ -5,8 +5,9 @@ import Image from "next/image";
 import { Container } from "@/components";
 import { TopBar } from "@/components/common/topBar";
 import { useScrollBlur } from "@/utils/useScrollBlur";
-import MainSection from "./main/_components/MainSection";
+import MainSection from "./main/_components/section/MainSection";
 import BNB from "@/components/common/bnb";
+import MainContent from "./main/_components/content/MainContent";
 
 export default function Home() {
   const containerRef = useRef<HTMLElement>(null);
@@ -24,6 +25,7 @@ export default function Home() {
         />
         <div className="flex flex-col gap-[72px]">
           <MainSection />
+          <MainContent />
         </div>
       </Container>
       <BNB />
