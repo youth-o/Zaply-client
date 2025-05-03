@@ -29,7 +29,7 @@
 | PWA | 웹 기술 기반으로 다양한 플랫폼에서 동작하고, 앱 스토어 없이 홈 화면에 추가할 수 있어 접근성과 편의성이 뛰어나며, 개발 비용 절감과 빠른 배포가 가능합니다. |
 
 ## 🗂️ Naming Rules
-* 폴더명 - `PascalCase`
+* 폴더명 - `camelCase`
 * 파일명 - `PascalCase`
 * 타입, 유틸함수 등 - `camelCase`
 * 상수 - `UpperCase`
