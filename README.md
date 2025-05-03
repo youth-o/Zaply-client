@@ -3,6 +3,7 @@
 
 # ⭐️ Frontend
 
+#### 랜딩페이지 URL https://zaply-landing.vercel.app/
 #### 배포 URL 
 * * *
 
