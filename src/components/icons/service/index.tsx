@@ -479,6 +479,50 @@ export const HeartIcon = ({
   </svg>
 );
 
+export const FollowersIcon = ({
+  width = 24,
+  height = 24,
+  stroke = "currentColor",
+  className,
+  ...props
+}: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    className={className}
+    {...props}>
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M13.9761 7.36049C13.9761 9.70533 12.075 11.6053 9.73137 11.6053C7.38654 11.6053 5.48535 9.70533 5.48535 7.36049C5.48535 5.01565 7.38654 3.11572 9.73137 3.11572C12.075 3.11572 13.9761 5.01565 13.9761 7.36049Z"
+      stroke={stroke}
+      stroke-width="1.4"
+      stroke-linecap="square"
+    />
+    <path
+      d="M13.9068 5.73099C14.5 5.07681 15.3568 4.66602 16.3096 4.66602C18.0991 4.66602 19.5509 6.11679 19.5509 7.90729C19.5509 9.69778 18.0991 11.1486 16.3096 11.1486C15.167 11.1486 14.1624 10.5578 13.585 9.66499"
+      stroke={stroke}
+      stroke-width="1.4"
+      stroke-linecap="square"
+    />
+    <path
+      d="M9.76408 14.7071C12.8915 14.6991 15.5507 16.135 16.5282 19.2261C14.558 20.4272 12.2389 20.8898 9.76408 20.8837C7.28921 20.8898 4.97016 20.4272 3 19.2261C3.97857 16.1317 6.63327 14.6991 9.76408 14.7071Z"
+      stroke={stroke}
+      stroke-width="1.4"
+      stroke-linecap="square"
+    />
+    <path
+      d="M16.3352 18.2323C18.225 18.237 19.9958 17.8837 21.5002 16.9666C20.7539 14.6063 18.7233 13.5098 16.3352 13.5159C14.8309 13.512 13.4705 13.9438 12.4824 14.8531"
+      stroke={stroke}
+      stroke-width="1.4"
+      stroke-linecap="square"
+    />
+  </svg>
+);
+
 export const SettingsIcon = ({
   width = 24,
   height = 24,
@@ -751,6 +795,36 @@ export const ShareIcon = ({
     <path d="M12 15L12 5" stroke={stroke} strokeWidth="1.4" strokeLinecap="round" />
     <path d="M9 7L12 4L15 7" stroke={stroke} strokeWidth="1.4" strokeLinecap="round" />
     <path d="M4 14V20H20V14" stroke={stroke} strokeWidth="1.4" strokeLinecap="round" />
+  </svg>
+);
+
+export const ViewIcon = ({
+  width = 24,
+  height = 24,
+  stroke = "currentColor",
+  className,
+  ...props
+}: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    fill="none"
+    className={className}
+    {...props}>
+    <path
+      stroke={stroke}
+      strokeLinecap="square"
+      strokeWidth={1.4}
+      d="M15.008 13.722a3.162 3.162 0 1 1-6.324-.001 3.162 3.162 0 0 1 6.324.001Z"
+      clipRule="evenodd"
+    />
+    <path
+      stroke={stroke}
+      strokeLinecap="square"
+      strokeWidth={1.4}
+      d="M21.097 13.721c-1.961-4.128-5.444-6.604-9.252-6.604h.004c-3.808 0-7.291 2.476-9.252 6.604"
+    />
   </svg>
 );
 
