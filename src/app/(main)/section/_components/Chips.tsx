@@ -1,5 +1,5 @@
 import { ViewIcon, HeartIcon, FollowersIcon } from "@/components/icons";
-import { formatNumberWithComma } from "../hooks/useFormatCount";
+import { formatNumberWithComma } from "./hooks/useFormatCount";
 
 const Chips = ({ type = "default", month = 5, counts }: ChipsProps) => {
   const iconMap = {
