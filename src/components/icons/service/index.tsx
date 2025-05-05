@@ -1586,3 +1586,36 @@ export const PlusIcon = ({
     <path d="M11 21V1" stroke={stroke} stroke-width="1.4" stroke-linecap="round" />
   </svg>
 );
+
+export const TimeIcon = ({
+  width = 24,
+  height = 24,
+  color = "#FEFEFE",
+  stroke = "currentColor",
+  className,
+  ...props
+}: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="21"
+    viewBox="0 0 20 21"
+    fill="none"
+    className={className}
+    {...props}>
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M17.9167 10.4998C17.9167 14.7573 14.4658 18.2082 10.2083 18.2082C5.95083 18.2082 2.5 14.7573 2.5 10.4998C2.5 6.24234 5.95083 2.7915 10.2083 2.7915C14.4658 2.7915 17.9167 6.24234 17.9167 10.4998Z"
+      stroke={stroke}
+      stroke-width="1.16667"
+      stroke-linecap="square"
+    />
+    <path
+      d="M13.0684 12.9519L9.92676 11.0777V7.03857"
+      stroke={stroke}
+      stroke-width="1.16667"
+      stroke-linecap="square"
+    />
+  </svg>
+);

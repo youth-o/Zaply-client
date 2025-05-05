@@ -173,7 +173,7 @@ module.exports = {
         out: "out 0.2s ease-in",
       },
       boxShadow: {
-        bnb: "0px 0px 50px 0px rgba(152, 167, 172, 0.10)",
+        drop: "0px 0px 50px 0px rgba(152, 167, 172, 0.10)",
       },
     },
   },

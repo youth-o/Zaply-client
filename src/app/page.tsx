@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Container
         ref={containerRef}
-        className="overflow-y-scroll bg-backgroundLine-yellow bg-cover bg-center flex flex-col gap-[28px]">
+        className="overflow-y-scroll scrollbar-hide bg-backgroundLine-yellow bg-cover bg-center flex flex-col gap-[28px]">
         <TopBar
           isBlur={isBlur}
           left={<Image src={"/assets/images/logo-black.webp"} width={99} height={36} alt="logo" />}
