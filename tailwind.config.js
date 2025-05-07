@@ -168,7 +168,7 @@ module.exports = {
         "slide-out-to-left": "slide-out-to-left 0.2s ease-in",
         "zoom-in": "zoom-in 0.2s ease-out",
         "zoom-out": "zoom-out 0.2s ease-in",
-        "border-rotate": "border-rotate 1s linear infinite",
+        "border-rotate": "border-rotate 1.5s linear infinite",
         in: "in 0.2s ease-out",
         out: "out 0.2s ease-in",
       },

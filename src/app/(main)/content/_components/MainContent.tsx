@@ -1,9 +1,22 @@
+import { useEffect } from "react";
 import ContentList from "./ContentList";
 import ContentToggle from "./ContentToggle";
+import { contentItemsMock } from "./mocks/contentItems";
+import { useContentStore } from "@/stores/useContentStore";
 
 const MainContent = () => {
+  const now = new Date();
+  const setCounts = useContentStore(state => state.setCounts);
+
+  useEffect(() => {
+    const reserved = contentItemsMock.filter(item => new Date(item.publishedAt) > now).length;
+    const recent = contentItemsMock.filter(item => new Date(item.publishedAt) <= now).length;
+
+    setCounts({ reserved, recent });
+  }, [setCounts, now]);
+
   return (
-    <main className="flex flex-col gap-4">
+    <main className="h-full flex flex-col gap-4">
       <ContentToggle />
       <ContentList />
     </main>
