@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Chips from "./Chips";
 import ContentButton from "./ContentButton";
-
-const chipTypes = ["default", "like", "follow"] as const;
+import { CHIP_TYPES } from "./constants/chips";
 
 const MainSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,13 +10,13 @@ const MainSection = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex(prev => (prev + 1) % chipTypes.length);
+      setCurrentIndex(prev => (prev + 1) % CHIP_TYPES.length);
     }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
-  const currentType = chipTypes[currentIndex];
+  const currentType = CHIP_TYPES[currentIndex];
 
   return (
     <section className="mt-[90px] flex flex-col items-center justify-center gap-5">

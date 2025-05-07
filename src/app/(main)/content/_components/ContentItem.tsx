@@ -1,10 +1,8 @@
 import { ChevronIcon, TimeIcon } from "@/components/icons";
-import { contentItemsMock } from "./mocks/contentItems";
 import { useDateLabel, useFormattedDateTime } from "./hooks/useFormatTime";
 import Platforms from "./Platforms";
 import { useContentStore } from "@/stores/useContentStore";
-
-type ContentItemProps = (typeof contentItemsMock)[number];
+import { ContentItemProps } from "@/types/contentItem";
 
 const ContentItem = ({ type, title, publishedAt, platforms }: ContentItemProps) => {
   const formatted = useFormattedDateTime(publishedAt);

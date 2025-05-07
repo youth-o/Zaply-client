@@ -1,12 +1,6 @@
-type PlatformType = "instagram" | "threads" | "facebook";
+import { ContentItemProps } from "@/types/contentItem";
 
-export const contentItemsMock: {
-  id: number;
-  type: "게시글" | "숏폼";
-  title: string;
-  publishedAt: string;
-  platforms: PlatformType[];
-}[] = [
+export const contentItemsMock: ContentItemProps[] = [
   {
     id: 1,
     type: "게시글",
