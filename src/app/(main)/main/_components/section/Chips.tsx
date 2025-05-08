@@ -1,6 +1,6 @@
 import { ViewIcon, HeartIcon, FollowersIcon } from "@/components/icons";
-import { formatNumberWithComma } from "./hooks/useFormatCount";
-import { ChipType } from "./constants/chips";
+import { formatNumberWithComma } from "../hooks/useFormatCount";
+import { ChipType } from "../constants/chips";
 
 interface ChipsProps {
   type?: ChipType;

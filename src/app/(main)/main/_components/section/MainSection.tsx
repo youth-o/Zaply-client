@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { CHIP_TYPES } from "../constants/chips";
+import { useContentStore } from "@/stores/useContentStore";
 import Chips from "./Chips";
 import ContentButton from "./ContentButton";
-import { CHIP_TYPES } from "./constants/chips";
-import { useContentStore } from "@/stores/useContentStore";
 
 const MainSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

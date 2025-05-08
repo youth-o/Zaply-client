@@ -1,8 +1,8 @@
 import { ChevronIcon, TimeIcon } from "@/components/icons";
-import { useDateLabel, useFormattedDateTime } from "./hooks/useFormatTime";
-import Platforms from "./Platforms";
 import { useContentStore } from "@/stores/useContentStore";
 import { ContentItemProps } from "@/types/contentItem";
+import { useDateLabel, useFormattedDateTime } from "../hooks/useFormatTime";
+import Platforms from "./Platforms";
 
 const ContentItem = ({ type, title, publishedAt, platforms }: ContentItemProps) => {
   const formatted = useFormattedDateTime(publishedAt);

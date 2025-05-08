@@ -1,6 +1,6 @@
-import { contentItemsMock } from "./mocks/contentItems";
 import ContentItem from "./ContentItem";
 import { useContentStore } from "@/stores/useContentStore";
+import { contentItemsMock } from "../mocks/contentItems";
 
 const ContentList = () => {
   const activeTab = useContentStore(state => state.activeTab);

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import ContentList from "./ContentList";
 import ContentToggle from "./ContentToggle";
-import { contentItemsMock } from "./mocks/contentItems";
 import { useContentStore } from "@/stores/useContentStore";
+import { contentItemsMock } from "../mocks/contentItems";
 
 const MainContent = () => {
   const now = new Date();
