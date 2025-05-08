@@ -5,9 +5,9 @@ import Image from "next/image";
 import { Container } from "@/components";
 import { TopBar } from "@/components/common/topBar";
 import { useScrollBlur } from "@/utils/useScrollBlur";
-import MainSection from "./main/_components/section/MainSection";
 import BNB from "@/components/common/bnb";
-import MainContent from "./main/_components/content/MainContent";
+import MainSection from "./(main)/main/_components/section/MainSection";
+import MainContent from "./(main)/main/_components/content/MainContent";
 
 export default function Home() {
   const containerRef = useRef<HTMLElement>(null);
@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Container
         ref={containerRef}
-        className="overflow-y-scroll bg-backgroundLine-yellow bg-cover bg-center flex flex-col gap-[28px]">
+        className="overflow-y-scroll scrollbar-hide bg-backgroundLine-green bg-cover bg-center flex flex-col gap-[28px] pb-[185px]">
         <TopBar
           isBlur={isBlur}
           left={<Image src={"/assets/images/logo-black.webp"} width={99} height={36} alt="logo" />}
